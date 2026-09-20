@@ -6,6 +6,7 @@
   <title>TVE Timeline</title>
   
   <link href="https://unpkg.com/vis-timeline@latest/styles/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="style.css" />
   <script src="https://unpkg.com/vis-timeline@latest/standalone/umd/vis-timeline-graph2d.min.js"></script>
 
   <style>
@@ -31,7 +32,7 @@
     // 2. Define Timeline Items
     const items = new vis.DataSet([
       { id: 1, content: 'TVE is first launched', start: '2020-03-06', title: 'TVE is launched, along with its discord server. Many Purity players flock to the server due to promotion on there.' },
-      { id: 2, content: 'Gulag Gang (Phase 1) [make clickable to put info, unfinished]', start: '2020-04-05', end: '2020-07-03' },
+      { id: 2, content: 'Gulag Gang (Phase 1) [make clickable to put info, unfinished]', start: '2020-04-05', end: '2020-07-03', className: 'custom-item-maroon'},
     ]);
 
     const options = {
