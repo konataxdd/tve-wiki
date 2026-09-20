@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TVE Timeline</title>
+  
+  <link href="https://unpkg.com/vis-timeline@latest/styles/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://unpkg.com/vis-timeline@latest/standalone/umd/vis-timeline-graph2d.min.js"></script>
+
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      margin: 20px;
+    }
+    #visualization {
+      width: 100%;
+      border: 1px solid #ddd;
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <h2>TVE Timeline</h2>
+  <div id="visualization"></div>
+
+  <script>
+    // 1. Target container element
+    const container = document.getElementById('visualization');
+
+    // 2. Define Timeline Items
+    const items = new vis.DataSet([
+      { id: 1, content: 'TVE is first launched', start: '2020-03-06', title: 'TVE is launched, along with its discord server. Many Purity players flock to the server due to promotion on there.' },
+      { id: 2, content: 'Gulag Gang (Phase 1) [make clickable to put info, unfinished]', start: '2020-04-05', end: '2020-07-03' },
+    ]);
+
+    const options = {
+      height: '400px',
+      editable: true,
+      margin: { item: 10 }
+    };
+
+    const timeline = new vis.Timeline(container, items, options);
+  </script>
+</body>
+</html>
