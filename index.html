@@ -340,12 +340,13 @@
 
     const options = {
       editable: false,
+      selectable: false,
       stack: true,
       template: function (item) {
         if (item.url) {
           return `<a href="${item.url}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">${item.content}</a>`;
         }
-        return item.titleName;
+        return item.content;
       },
       margin: { item: 10 }
     };
