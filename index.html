@@ -341,9 +341,10 @@
     const options = {
       editable: false,
       selectable: false,
-      stack: true,
-      followMouse: true,
-      overflowMethod: 'cap',
+      stack: false,
+      stackSubgroups: false,
+      styleFlavors: 'line',
+      align: 'left',
       template: function (item) {
         if (item.url) {
           return `<a href="${item.url}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">${item.content}</a>`;
