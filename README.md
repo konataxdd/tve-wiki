@@ -1,6 +1,9 @@
 # tve-wiki
-Possible independent port of the TVE (True Vanilla Experiment) Wiki, a wiki for a Minecraft anarchy server with almost no restrictions.
-Initially planning to make a custom timeline for TVE using the wiki as a source, then possibly extending functionality recursively to feature maps, and eventually everything from the wiki.
+Currently a timeline for TVE (True Vanilla Experiment), a Minecraft anarchy server with almost no restrictions.
+
+Possible port of the [TVE Wiki](https://true-vanilla.fandom.com/wiki/True_Vanilla_Experiment_Wiki), perhaps featuring maps, and eventually everything from the wiki.
+
+This is the 6th such visual timeline currently, maintained by exxxx with help from EficaciousMig47.
 
 Access the timeline at: https://konataxdd.github.io/tve-wiki/
 

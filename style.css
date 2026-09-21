@@ -1,97 +1,46 @@
-/* Base Timeline Canvas */
-.vis-timeline {
-  border: none;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background-color: #ffffff;
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
-/* Timeline Item Styling */
-.vis-item {
-  border-radius: 4px;
-  font-size: 12px;
-  border: none;
+#visualization {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
-/* Rounded Pill Range Items */
-.vis-item.vis-range {
-  border-radius: 6px;
-  color: #ffffff;
-  font-weight: 600;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+.vis-custom-time.ml {
+  background-color: #ff0000;
+  width: 3px;
 }
 
-/* Custom Item Color Categories */
-.vis-item.custom-item-maroon {
+.vis-item.gulag {
   background-color: #721c24;
   border-color: #58151c;
 }
 
-.vis-item.custom-item-red {
+.vis-item.zirya {
   background-color: #d9383a;
 }
 
-.vis-item.custom-item-blue {
+.vis-item.ocean {
   background-color: #5ca1e6;
 }
 
-.vis-item.custom-item-purple {
+.vis-item.lunaria {
   background-color: #8a2be2;
 }
 
-/* Item Content & Thumbnail Layout */
-.timeline-card {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 4px 6px;
+.vis-item.f {
+  background-color: #00ff6a;
 }
 
-.timeline-thumb {
-  width: 24px;
-  height: 24px;
-  border-radius: 3px;
-  object-fit: cover;
+.vis-item.reef {
+  background-color: #04ff00;
 }
-
-.timeline-title {
-  font-weight: bold;
-  line-height: 1.2;
-}
-
-.timeline-date {
-  font-size: 10px;
-  opacity: 0.85;
-}
-
-/* Dark Context Menu & Tooltips */
-.custom-context-menu,
-.vis-tooltip {
-  background-color: #0b0b0b !important;
-  color: #ffffff !important;
-  border-radius: 12px !important;
-  padding: 12px 16px !important;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35) !important;
-  border: 1px solid #222 !important;
-  font-size: 13px !important;
-  max-width: 320px;
-}
-
-.custom-context-menu item {
-  padding: 6px 12px;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-.custom-context-menu item:hover {
-  background-color: #222222;
-}
-
-/* Axis & Grid Line Formatting */
-.vis-time-axis .vis-text {
-  color: #333;
-  font-size: 11px;
-}
-
-.vis-minor, .vis-major {
-  border-color: #e5e5e5;
+.vis-item.wrath {
+  background-color: #461313;
 }

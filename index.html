@@ -6,6 +6,7 @@
   <title>TVE Timeline</title>
   
   <link href="https://unpkg.com/vis-timeline@latest/styles/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="style.css" />
   <script src="https://unpkg.com/vis-timeline@latest/standalone/umd/vis-timeline-graph2d.min.js"></script>
 
   <style>
@@ -31,16 +32,24 @@
     // 2. Define Timeline Items
     const items = new vis.DataSet([
       { id: 1, content: 'TVE is first launched', start: '2020-03-06', title: 'TVE is launched, along with its discord server. Many Purity players flock to the server due to promotion on there.' },
-      { id: 2, content: 'Gulag Gang (Phase 1) [make clickable to put info, unfinished]', start: '2020-04-05', end: '2020-07-03', className: 'custom-item-maroon'},
+      { id: 2, content: 'Gulag Gang (Phase 1)', group: 'gulag', className: 'gulag', start: '2020-04-05', end: '2020-07-03', "title": "The first and longest lasting major clan is established on TVE.<br>It had 12 players at its peak. The leader was GlinglinMerguez.", url: 'https://true-vanilla.fandom.com/wiki/Gulag_Gang'},
     ]);
 
     const options = {
-      height: '400px',
+      height: '100%',
+      width: '100%',
       editable: false,
+      template: function (item) {
+        if (item.url) {
+          return `<a href="${item.url}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">${item.content}</a>`;
+        }
+        return item.titleName;
+      },
       margin: { item: 10 }
     };
 
     const timeline = new vis.Timeline(container, items, options);
+    timeline.addCustomTime('2020-06-03', 'ml');
   </script>
 </body>
 </html>
