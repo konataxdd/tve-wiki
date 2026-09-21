@@ -339,8 +339,8 @@
   }]);
 
     const options = {
-      height: '400px',
       editable: false,
+      stack: true,
       template: function (item) {
         if (item.url) {
           return `<a href="${item.url}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">${item.content}</a>`;
