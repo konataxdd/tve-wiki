@@ -342,6 +342,8 @@
       editable: false,
       selectable: false,
       stack: true,
+      followMouse: true,
+      overflowMethod: 'cap',
       template: function (item) {
         if (item.url) {
           return `<a href="${item.url}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">${item.content}</a>`;
