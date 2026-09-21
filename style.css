@@ -2,6 +2,10 @@
 .vis-timeline .vis-item * {
   color: white !important;
 }
+.vis-item.vis-point .vis-item-content {
+  display: inline-block !important;
+  overflow: visible !important;
+}
 
 .vis-timeline .vis-item a {
   color: inherit;
