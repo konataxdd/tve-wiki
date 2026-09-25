@@ -1,6 +1,15 @@
-.vis-timeline .vis-item,
-.vis-timeline .vis-item * {
-  color: white !important;
+.vis-item.vis-point .vis-item-content {
+  color: black !important;
+}
+
+.vis-timeline .vis-item.vis-box,
+.vis-timeline .vis-item.vis-range {
+  color: white;
+}
+
+.vis-timeline .vis-item.vis-box .vis-item-content,
+.vis-timeline .vis-item.vis-range .vis-item-content {
+  color: white;
 }
 
 .vis-timeline .vis-item a {
