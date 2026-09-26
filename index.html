@@ -26,10 +26,9 @@
   <div id="visualization"></div>
 
   <script>
-    // 1. Target container element
     const container = document.getElementById('visualization');
+  //  const groups = new vis.DataSet([{id: 1, content: "groups"}]);
 
-    // 2. Define Timeline Items
     const items = new vis.DataSet([
   {
     "id": 124,
@@ -67,7 +66,7 @@
   },
   {
     "id": 128,
-    "content": "Gulag Gang (Phase 1)",
+    "content": "Gulag Gang (I)",
     "start": "2020-04-05",
     "end": "2020-07-03",
     "group": "gulag",
@@ -77,7 +76,7 @@
   },
   {
     "id": 129,
-    "content": "Spawn Decimation",
+    "content": "Spawn Decimation I",
     "start": "2020-04-07",
     "group": "gulag",
     "className": "gulag",
@@ -105,12 +104,12 @@
   },
   {
     "id": 132,
-    "content": "Lunaria (Phase 1)",
+    "content": "Lunaria",
     "start": "2020-04-19",
     "end": "2020-06-04",
     "group": "luna",
     "className": "luna",
-    "title": "April 19th, 2020 - June 4th, 2020<br>This small, leaderless group was in some capacity a trading group, but mostly had prominent events linked to it through the actions of ed_perm (exxxx) or Lulu49_ (Ecchou).",
+    "title": "April 19th, 2020 - June 4th, 2020<br>Consisting of 3 players, its players did whatever, but not without lasting contributions to the server's history.",
     "url": "https://true-vanilla.fandom.com/wiki/Lunaria"
   },
   {
@@ -285,7 +284,7 @@
   },
   {
     "id": 152,
-    "content": "The First Major Leaving (The End of the Golden Era)",
+    "content": "Major Leaving I (The End of the Golden Era)",
     "start": "2020-06-03",
     "title": "June 3rd, 2020<br>Due to movement restrictions and more base leaks, many players quit the server.",
     "type": "point",
@@ -337,7 +336,7 @@
   },
   {
     "id": 161,
-    "content": "The Second Major Leaving",
+    "content": "Major Leaving II",
     "start": "2020-06-29",
     "title": "June 29th, 2020<br>The server updates to 1.16.1, The Coalition disbands.",
     "type": "point",
@@ -354,7 +353,7 @@
   },
   {
     "id": 165,
-    "content": "The First Massive Spawn Ocean",
+    "content": "Massive Spawn Ocean I",
     "start": "2020-07-10",
     "group": "ocean",
     "className": "ocean",
@@ -383,7 +382,7 @@
     "content": "Neo MAC",
     "start": "2020-08-09",
     "end": "2021-01-09",
-    "title": "August 9th, 2020 - January 9th, 2021<br>The Aristher Community's main base",
+    "title": "August 9th, 2020 - January 9th, 2021<br>The Aristher Community's main base.",
     "url": "https://true-vanilla.fandom.com/wiki/Neo_MAC"
   },
   {
@@ -459,8 +458,9 @@
   },
   {
     "id": 180,
-    "content": "Second Massive Spawn Ocean",
+    "content": "Massive Spawn Ocean II",
     "start": "2020-11-19",
+    "end": "2021-04-25",
     "className": "ocean",
     "title": "November 19th 2020<br>JustAnotherSheep works with Cwedin78 and AncyenT to make the Second Massive Spawn Ocean.",
     "type": "point",
@@ -529,6 +529,7 @@
     "start": "2020-12-21",
     "title": "December 21st, 2020<br>1000 wither are spawned , by Grimone and Cyrobalt , in nether and overworld spawns, using duped materials.",
     "type": "point",
+    "url": "https://true-vanilla.fandom.com/wiki/1000_Withers_Spawned"
   },
   {
     "id": 194,
@@ -537,9 +538,367 @@
     "className": "ocean",
     "title": "December 27th, 2020<br>An obsidian roof gets built at spawn by Sheep, to prevent ocean drainages.",
     "type": "point",
-  }]);
+    "url": "https://true-vanilla.fandom.com/wiki/JustAnotherSheep"
+  },
+    {
+    "id": 197,
+    "content": "Neo MAC",
+    "start": "2021-01-09",
+    "title": "January 9th, 2021<br>Neo MAC gets griefed, and abandoned.",
+    "type": "point",
+    "url": "https://true-vanilla.fandom.com/wiki/Neo_MAC"
+  },
+  {
+    "id": 198,
+    "content": "Make Oceans, Not War",
+    "start": "2021-01-14",
+    "title": "January 14th, 2021<br>The \"Make Oceans, Not War\" mapart gets finished, by Sheep and Sofunga .",
+    "type": "point",
+    "url": "https://true-vanilla.fandom.com/wiki/JustAnotherSheep"
+  },
+  {
+    "id": 199,
+    "content": "Gulag Gang Prepares Comeback",
+    "className": "gulag",
+    "start": "2021-02-06",
+    "title": "February 6th, 2021<br>Gulag Gang starts preparations in order to come back to TVE (namely re-estabilishing communications and obtaining duped items).",
+    "type": "point",
+    "url": "https://true-vanilla.fandom.com/wiki/Gulag_Gang"
+  },
+  {
+    "id": 200,
+    "content": "Temporary TVE Shutdown",
+    "start": "2021-02-13",
+    "title": "February 13th, 2021<br>Penguin temporarily shuts down TVE, as he is no longer able to run it.",
+    "type": "point",
+    "url": "https://true-vanilla.fandom.com/wiki/Penguin4215"
+  },
+  {
+    "id": 201,
+    "content": "Ownership Transfer I",
+    "start": "2021-02-16",
+    "title": "February 16th, 2021<br>Penguin transfers ownership to sleepylessons, and cuts ties with TVE for good.",
+    "type": "point",
+    "url": "https://true-vanilla.fandom.com/wiki/Sleepylessons"
+  },
+  {
+    "id": 202,
+    "content": "Censorship of the Community Discord",
+    "start": "2021-02-16",
+    "title": "February 16th, 2021<br>sleepylessons enforces Discord TOS rules on the TVE Discord<br>(volunteer moderators, banning problematic users).",
+    "type": "point",
+    "url": "https://true-vanilla.fandom.com/wiki/Sleepylessons"
+  },
+  {
+    "id": 203,
+    "content": "Bennooo Cult",
+    "start": "2021-02-16",
+    "title": "February 16th, 2021<br>The cult for Bennooo starts after he helped sleepylessons on some tests.",
+    "type": "point",
+    "url": "https://true-vanilla.fandom.com/wiki/Bennooo"
+  },
+  {
+    "id": 204,
+    "content": "Discovery of Ungriefed End Portals",
+    "start": "2021-02-17",
+    "className": "gulag",
+    "title": "February 17th, 2021<br>Gulag Gang discovers that 2 end portals were left ungriefed by Lidee , and updated the portal list.",
+    "type": "point",
+    "url": "https://true-vanilla.fandom.com/wiki/Gulag_Gang"
+  },
+  {
+    "id": 205,
+    "content": "TVE Wiki Restarted",
+    "start": "2021-02-20",
+    "title": "February 20th, 2021<br>The TVE Wiki is restarted with a new team of archivists.",
+    "type": "point",
+    "url": "https://true-vanilla.fandom.com/wiki/True_Vanilla_Experiment_Wiki"
+  },
+  {
+    "id": 206,
+    "content": "TVE Birthday Party I",
+    "start": "2021-03-06",
+    "className": "tvg",
+    "title": "March 6th, 2021<br>The TVE Birthday Party is held at spawn.",
+    "type": "point",
+    "url": "https://true-vanilla.fandom.com/wiki/TVE_Birthday_Meetup_(2021)"
+  },
+  {
+    "id": 207,
+    "content": "The River of Wheat",
+    "start": "2021-03-10",
+    "end": "2021-04-10",
+    "title": "March 10th, 2021 - April 10th, 2021 (unconfirmed)<br>The River of Wheat is built by Sno_fro.<br>An iconic spawn build, it was griefed by teebee303 just a month later.",
+    "url": "https://true-vanilla.fandom.com/wiki/The_River_of_Wheat"
+  },
+  {
+    "id": 208,
+    "content": "World Border Expeditions I",
+    "start": "2021-03-14",
+    "title": "March 14th, 2021<br>Cyrobalt reaches the Z- world border, closely followed by EficaciousMig47.<br>Aermyne reaches the X+ world border on the next day.",
+    "type": "point",
+    "url": "https://true-vanilla.fandom.com/wiki/World_border"
+  },
+  {
+    "id": 211,
+    "content": "North Canal",
+    "start": "2021-03-23",
+    "title": "March 23rd, 2021<br>The North Canal is started by BigManReef and the Canal Co-Op.<br>The goal of 10k blocks is surpassed on the 29th.<br>Today, the canal is over 100k blocks long due to secret efforts.",
+    "type": "point",
+    "url": "https://true-vanilla.fandom.com/wiki/North_Canal"
+  },
+    {
+    "id": 212,
+    "content": "The Canal Co-Op",
+    "start": "2021-03-23",
+    "end": "2021-05-14",
+    "title": "March 23rd, 2021<br>Started by BigManReef to construct the North Canal.<br>Eventually disbands after achieving goal of 10k blocks.",
+    "type": "point",
+    "url": "https://true-vanilla.fandom.com/wiki/Canal_Co-Op"
+  },
+  {
+    "id": 214,
+    "content": "Gulag Gang (II)",
+    "className": "gulag",
+    "start": "2021-04-05",
+    "end": "2021-04-25",
+    "title": "April 5th, 2021 - April 25th, 2021<br>Gulag Gang officially returns in preparation for the Spawn Ocean War.",
+    "url": "https://true-vanilla.fandom.com/wiki/Gulag_Gang"
+  },
+  {
+    "id": 216,
+    "content": "N*ggang (Gulag Guardians II)",
+    "className": "gulag",
+    "start": "2021-04-12",
+    "end": "2021-04-25",
+    "title": "April 12th, 2021 - April 25th, 2021<br>A rebirth of Gulag Guardians for the Second Spawn Ocean War.",
+    "url": "https://true-vanilla.fandom.com/wiki/N****ng"
+  },
+  {
+    "id": 217,
+    "content": "Spawn Ocean War",
+    "start": "2021-04-15",
+    "end": "2021-04-25",
+    "className": "ocean",
+    "title": "April 15th, 2021 - April 25th, 2021<br>The Spawn Pubes are built to prevent future flooding and spawn is fully drained.",
+    "type": "point",
+    "url": "https://true-vanilla.fandom.com/wiki/Pubes"
+  },
+  {
+    "id": 219,
+    "content": "Nether Hub",
+    "start": "2021-04-20",
+    "title": "April 20th, 2021<br>The nether hub gets fully rebuilt by a mix of players, including obyx.",
+    "type": "point",
+  },
+  {
+    "id": 223,
+    "content": "Necro Town",
+    "start": "2021-05-15",
+    "end": "2021-05-25",
+    "title": "May 15th, 2021 - May 25th, 2021<br>A base founded by a group of friends, known for its members having 'necro' in their usernames.<br>Informally, they were known as the Necro Group.",
+    "url": "https://true-vanilla.fandom.com/wiki/Necro_Town"
+  },
+  {
+    "id": 225,
+    "content": "H*ntai Sign Meetup",
+    "start": "2021-05-26",
+    "title": "May 26th, 2021",
+    "type": "point",
+    "url": "https://true-vanilla.fandom.com/wiki/H*ntai_Sign_Meetup"
+  },
+  {
+    "id": 231,
+    "content": "World Border Expeditions II",
+    "start": "2021-07-06",
+    "end": "2021-07-09",
+    "title": "July 6th, 2021 - July 9th, 2021<br>exxxx reaches all cardinal borders. Aermyne reaches the X- world border.",
+    "url": "https://true-vanilla.fandom.com/wiki/World_border"
+  },
+  {
+    "id": 235,
+    "content": "Spawn Party I",
+    "start": "2021-07-09",
+    "className": "tvg",
+    "title": "July 9th, 2021<br>The (First) Spawn Party is held, reaching a (local) peak of 18 online players at the same time.",
+    "type": "point",
+    "url": "https://true-vanilla.fandom.com/wiki/Spawn_Party"
+  },
+  {
+    "id": 236,
+    "content": "Monkey Gang",
+    "start": "2021-07-09",
+    "end": "2021-07-20",
+    "title": "July 9th, 2021 - July 20th, 2021<br>Monkey Gang is created after the party.<br>A small anti-Monkey Gang group commences activities on the 13th, though both stop playing.",
+  },
+  {
+    "id": 239,
+    "content": "True Vanilla Gang",
+    "start": "2021-07-14",
+    "end": "2022-03-07",
+    "className": "tvg",
+    "title": "July 14th, 2021 - March 7th, 2022<br>Initially a small base by Brsph, Ramoops and Jazzbears, eventually becomes the community-oriented True Vanilla Gang (TVG).",
+    "url": "https://true-vanilla.fandom.com/wiki/True_Vanilla_Gang"
+  },
+  {
+    "id": 241,
+    "content": "World Border Expeditions III",
+    "start": "2021-07-26",
+    "end": "2021-07-29",
+    "title": "July 26th, 2021 - July 29th, 2021<br>Mintraft reaches the X+, X+/Z+ and Z+ world border.",
+    "url": "https://true-vanilla.fandom.com/wiki/World_border"
+  },
+  {
+    "id": 244,
+    "content": "TVE Major Shutdown I",
+    "start": "2021-07-29",
+    "end": "2021-08-18",
+    "title": "July 29th, 2021 - August 18th, 2021<br>After days of constant lag, small chunk corruptions and various server crashes, TVE shuts down.",
+  },
+  {
+    "id": 246,
+    "content": "Spawn Party II",
+    "start": "2021-08-24",
+    "className": "tvg",
+    "title": "August 24th, 2021<br>The Second Spawn Party is held, also by Efic and Red_ICE.",
+    "url": "https://true-vanilla.fandom.com/wiki/Second_Spawn_Party"
+  },
+  {
+    "id": 247,
+    "content": "Anarchyville",
+    "start": "2021-08-31",
+    "end": "2021-11-22",
+    "className": "tvg",
+    "title": "August 31st, 2021<br>Initially announced as \"Place of the Challenge\" by TVG, later became a spawn base experiment on September 26th, 2021.<br>Attracted significant player activity.<br>TVG stops maintaining the base on November 1st, and it is eventually griefed on the 22nd.",
+    "type": "point",
+    "url": "https://true-vanilla.fandom.com/wiki/Anarchyville"
+  },
+  {
+    "id": 251,
+    "content": "Ownership Transfer II",
+    "start": "2021-09-22",
+    "title": "September 22nd, 2021<br>TVE gets updated to 1.17.1, now fully owned by Aermyne and turret001.",
+    "type": "point",
+    "url": "https://true-vanilla.fandom.com/wiki/Aermyne"
+  },
+  {
+    "id": 252,
+    "content": "Spawn Party III",
+    "start": "2021-09-24",
+    "title": "September 24th, 2021<br>The Third Spawn Party is held by EficaciousMig47 and Red_ICE.",
+    "className": "tvg",
+    "type": "point",
+    "url": "https://true-vanilla.fandom.com/wiki/Third_Spawn_Party"
+  },
+  {
+    "id": 257,
+    "content": "Vertical Border Reached",
+    "start": "2021-10-01",
+    "title": "October 1st, 2021<br>Cyrobalt becomes the first player to reach the highest possible Y axis coordinates (sky limit) at 20 million blocks.",
+    "type": "point",
+    "url": "https://true-vanilla.fandom.com/wiki/World_border"
+  },
+  {
+    "id": 258,
+    "content": "Anarchyville Grief I",
+    "start": "2021-10-12",
+    "className": "tvg",
+    "title": "October 12th, 2021<br>After the subsequent restoration, interest starts to wane, although stabilises.",
+    "type": "point",
+    "url": "https://true-vanilla.fandom.com/wiki/Anarchyville"
+  },
+  {
+    "id": 259,
+    "content": "TVG Halloween Build Contest",
+    "start": "2021-10-30",
+    "className": "tvg",
+    "title": "October 30, 2021<br>The TVG Halloween Build Contest is held at Anarchyville, with BigManReef as the winner.",
+    "type": "point",
+    "url": "https://true-vanilla.fandom.com/wiki/Anarchyville"
+  },
+  {
+    "id": 260,
+    "content": "End Ocean Dried",
+    "start": "2021-10-01",
+    "className": "ocean",
+    "title": "The end ocean is presumed to be dried sometime during October 2021.",
+    "type": "point",
+  },
+  {
+    "id": 262,
+    "content": "Small Bamboo War",
+    "start": "2021-11-02",
+    "title": "November 2nd, 2021",
+    "type": "point",
+    "url": "https://true-vanilla.fandom.com/wiki/Small_bamboo_war"
+  },
+  {
+    "id": 263,
+    "content": "Main End Island Excavation",
+    "start": "2021-11-02",
+    "end": "2022-01-21",
+    "title": "November 2nd, 2021 - January 21, 2021<br>The entirety of the end island is dug out by lildrainpipe and WhipsterStain.",
+    "url": "https://true-vanilla.fandom.com/wiki/Main_End_Island_Excavation"
+  },
+  {
+    "id": 266,
+    "content": "Spawn Decimation II",
+    "start": "2021-11-05",
+    "className": "gulag",
+    "title": "November 5th, 2021<br>Gulag and N*ggang very briefly come back to grief spawn once again.",
+    "url": "https://true-vanilla.fandom.com/wiki/Gulag_Gang"
+  },
+  {
+    "id": 267,
+    "content": "Nether Roof Hole Project",
+    "start": "2021-11-06",
+    "end": "2021-11-30",
+    "className": "tvg",
+    "title": "November 6th, 2021 - November 30th, 2021<br>EficaciousMig47 (Efic) expands the nether roof hole, making the roof easier to get on.",
+    "url": "https://true-vanilla.fandom.com/wiki/Nether_roof"
+  },
+  {
+    "id": 271,
+    "content": "Anarchyville Grief II",
+    "start": "2021-11-22",
+    "title": "November 22nd, 2021<br>Cyrobalt spawns 361 withers on Anarchyville.",
+    "url": "https://true-vanilla.fandom.com/wiki/Anarchyville"
+  },
+  {
+    "id": 274,
+    "content": "The Bamboo Forests",
+    "start": "2021-11-01",
+    "title": "During November 2021, a bamboo forest appears in Anarchyville, and another in the spawn region.<br>This leads to a small bamboo war.",
+    "url": "https://true-vanilla.fandom.com/wiki/The_2021_Bamboo_Forests"
+  },
+  {
+    "id": 277,
+    "content": "TVE updates to 1.18.1.",
+    "start": "2021-12-19",
+    "title": "December 19th, 2021",
+    "type": "point"
+  },
+  {
+    "id": 278,
+    "content": "Pube Expansion",
+    "start": "2021-12-19",
+    "className": "gulag",
+    "title": "19th December, 2021<br>In an effort from Gulag Gang and N*ggang, the pubes grow to the new 1.18 height limit.",
+    "type": "point",
+    "url": "https://true-vanilla.fandom.com/wiki/Pubes"
+  },
+  {
+    "id": 279,
+    "content": "Efic Attempts (Fails) to Destroy the Pubes",
+    "start": "2021-12-19",
+    "end": "2022-01-16",
+    "url": "https://true-vanilla.fandom.com/wiki/EficaciousMig47"
+  },
+]);
+  
 
     const options = {
+      height: '600px',
       editable: false,
       selectable: false,
       styleFlavors: 'line',
