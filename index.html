@@ -477,7 +477,7 @@
     "id": 182,
     "content": "Death Note",
     "start": "2020-12-01",
-    "end": 2020-12-20,
+    "end": "2020-12-20",
     "title": "December 1st, 2020 - December 20th, 2020<br>A group that tried to dry the Second Massive Spawn Ocean",
     "url": "https://true-vanilla.fandom.com/wiki/Death_Note"
   },
@@ -761,6 +761,7 @@
     "start": "2021-08-24",
     "className": "tvg",
     "title": "August 24th, 2021<br>The Second Spawn Party is held, also by Efic and Red_ICE.",
+    "type": "point",
     "url": "https://true-vanilla.fandom.com/wiki/Second_Spawn_Party"
   },
   {
@@ -898,7 +899,6 @@
   
 
     const options = {
-      height: '600px',
       editable: false,
       selectable: false,
       styleFlavors: 'line',
@@ -909,7 +909,7 @@
         }
         return item.content;
       },
-      margin: { item: 10 }
+      margin: { item: {horizontal: 1, vertical: 5} }
     };
 
     const timeline = new vis.Timeline(container, items, options);
